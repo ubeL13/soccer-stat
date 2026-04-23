@@ -5,7 +5,8 @@ const API_BASE =
   'https://api.football-data.org/v4';
 
 const CORS_PROXY =
-  (import.meta.env.VITE_CORS_PROXY as string | undefined) ?? 'http://45.88.175.174:5657/';
+  (import.meta.env.VITE_CORS_PROXY as string | undefined) ??
+  'https://grebenshchikovdanila.fvds.ru:5657/https%3A%2F%2Fapi.football-data.org%2Fv4%2Fcompetitions';
 
 function buildUrl(path: string, query: string): string {
   const suffix = `${path}${query ? `?${query}` : ''}`;
