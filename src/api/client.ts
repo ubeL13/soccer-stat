@@ -5,7 +5,7 @@ const API_BASE =
   'https://api.football-data.org/v4';
 
 const CORS_PROXY =
-  (import.meta.env.VITE_CORS_PROXY as string | undefined) ?? 'https://corsproxy.io/?';
+  (import.meta.env.VITE_CORS_PROXY as string | undefined) ?? 'http://45.88.175.174:5657/';
 
 function buildUrl(path: string, query: string): string {
   const suffix = `${path}${query ? `?${query}` : ''}`;
